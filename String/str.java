@@ -1,188 +1,188 @@
-// public class str{
-//     public static void main(String[] args){
-//         String s = "hello";
-//         int count = 0;
-//         for(int i=0; i<s.length(); i++){
-//             count++;
-//         }
-//         System.out.println("Total character" + count);
-//         }
-//     }
+public class str{
+    public static void main(String[] args){
+        String s = "hello";
+        int count = 0;
+        for(int i=0; i<s.length(); i++){
+            count++;
+        }
+        System.out.println("Total character" + count);
+        }
+    }
 
 
-// public class str1{
-//     public static void main(String[] args){
-//         String str = "madam";
-//         int count = 0;
-//         for(char c : str.toCharArray()){
-//             if("aeiouAEIOU".indexOf(c) != -1){
-//                 count++;
-//             }
-//             System.out.println("Total vowel :" + count);
-//         }
-//     }
-// }   
+public class str1{
+    public static void main(String[] args){
+        String str = "madam";
+        int count = 0;
+        for(char c : str.toCharArray()){
+            if("aeiouAEIOU".indexOf(c) != -1){
+                count++;
+            }
+            System.out.println("Total vowel :" + count);
+        }
+    }
+}   
 
-// public class str{
-//     public static void main(String[] args){
-//         String s = "hello world";
-//         int count = 0;
+public class str{
+    public static void main(String[] args){
+        String s = "hello world";
+        int count = 0;
 
-//         for(char c : s.toCharArray()){
-//             if(Character.isLetter(c) && "aeiouAEIOU".indexOf(c) == -1){
-//                 count++;
-//             }
-//         }
-//         System.out.println("Counsonate : " + count);
-//     }
-// }
+        for(char c : s.toCharArray()){
+            if(Character.isLetter(c) && "aeiouAEIOU".indexOf(c) == -1){
+                count++;
+            }
+        }
+        System.out.println("Counsonate : " + count);
+    }
+}
 
-// public class str{
-//     public static void main(String[] args){
-//         String str = "hello";
-//         String rev = "";
+public class str{
+    public static void main(String[] args){
+        String str = "hello";
+        String rev = "";
         
-//         for(int i = str.length() -1; i>=0; i--){
-//             rev += str.charAt(i);
-//         }
-//         System.out.println("Reversed :" + rev);
-//     }
-// }
+        for(int i = str.length() -1; i>=0; i--){
+            rev += str.charAt(i);
+        }
+        System.out.println("Reversed :" + rev);
+    }
+}
 
-// Palindrom
+Palindrom
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-// public class str{
-//     public static void main(String[] args){
-//         Scanner sc = new Scanner(System.in);
-//         System.out.print("Enter the any letter from A to Z");
-//         String s = sc.nextLine();
-//         boolean isPal = true;
-//         int i = 0, j = s.length() -1;
+public class str{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the any letter from A to Z");
+        String s = sc.nextLine();
+        boolean isPal = true;
+        int i = 0, j = s.length() -1;
 
-//         while (i < j) {
-//             if(s.charAt(i) != s.charAt(j)){
-//                 isPal = false;
-//                 break;
-//             }
-//             i++;
-//             j--;
-//         }
-//         if(isPal) System.out.print("Palindrom");
-//         else{
-//             System.out.print("Not palindrome");
-//         }
-//     }
+        while (i < j) {
+            if(s.charAt(i) != s.charAt(j)){
+                isPal = false;
+                break;
+            }
+            i++;
+            j--;
+        }
+        if(isPal) System.out.print("Palindrom");
+        else{
+            System.out.print("Not palindrome");
+        }
+    }
+}
+
+public class str{
+    public static void main(String[] args){
+        String s = "Hello coder keep learning and keep growing";
+        String[] parts = s.trim().split("\\s+");
+        System.out.println("words :"+ parts.length);
+    }
+}
+
+public class str{
+    public static void main(String[] args){
+        String s = "h e l l w o r l d ";
+        String convertUpper = s.toUpperCase();
+        System.out.println(convertUpper);
+    }
 // }
 
-// public class str{
-//     public static void main(String[] args){
-//         String s = "Hello coder keep learning and keep growing";
-//         String[] parts = s.trim().split("\\s+");
-//         System.out.println("words :"+ parts.length);
-//     }
-// }
+public class str{
+    public static void main(String[] args){
+        String s = "banana";
+        int[] ffi = new int[256];
 
-// public class str{
-//     public static void main(String[] args){
-//         String s = "h e l l w o r l d ";
-//         String convertUpper = s.toUpperCase();
-//         System.out.println(convertUpper);
-//     }
-// // }
+        for(char c : s.toCharArray()){
+            ffi[c]++;
+        }
+        for(int i = 0; i<256; i++){
+            if(ffi[i] > 0){
+                System.out.println((char)i + " = " + ffi[i]);
+            }
+        }
+    }
+}
 
-// public class str{
-//     public static void main(String[] args){
-//         String s = "banana";
-//         int[] ffi = new int[256];
+public class str {
 
-//         for(char c : s.toCharArray()){
-//             ffi[c]++;
-//         }
-//         for(int i = 0; i<256; i++){
-//             if(ffi[i] > 0){
-//                 System.out.println((char)i + " = " + ffi[i]);
-//             }
-//         }
-//     }
-// }
+    public static void main(String[] args){
+        String s = "hello";
 
-// public class str {
+        for(int i = 0; i<s.length(); i++){
+            System.out.println(i+ " => " + s.charAt(i));
+        }
+    }
+}
 
-//     public static void main(String[] args){
-//         String s = "hello";
+public class str{
+    public static void main(String[] args){
+        String s = "banana";
+        String updated = s.replace('a', 'x');
+        System.out.println(updated); 
+    }
+}
 
-//         for(int i = 0; i<s.length(); i++){
-//             System.out.println(i+ " => " + s.charAt(i));
-//         }
-//     }
-// }
+public class str {
 
-// public class str{
-//     public static void main(String[] args){
-//         String s = "banana";
-//         String updated = s.replace('a', 'x');
-//         System.out.println(updated); 
-//     }
-// }
+    public static void main(String[] args){
+        String s = "education";
+        String result = s.replaceAll("[aeiouAEIOU]", "");
+        System.out.println(result);
+    }
+}
 
-// public class str {
+public class str{
+    public static void main(String[] args){
+        String s = "12345";
+        boolean inNum = s.matches("\\d");
+        System.out.println(inNum ? "Only digit " : "Not digit");
+    }
+}
 
-//     public static void main(String[] args){
-//         String s = "education";
-//         String result = s.replaceAll("[aeiouAEIOU]", "");
-//         System.out.println(result);
-//     }
-// }
+public class str{
+    public static void main(String[] args){
+        String s = "bdxac";
+        char maxss = s.charAt(0);
+        for(char c : s.toCharArray()){
+            if(c > maxss) maxss = c;
+        }
+        System.out.println("Largest :" + maxss);
+    }
+}
 
-// public class str{
-//     public static void main(String[] args){
-//         String s = "12345";
-//         boolean inNum = s.matches("\\d");
-//         System.out.println(inNum ? "Only digit " : "Not digit");
-//     }
-// }
+public class str{
+    public static void main(String[] args){
+        String s = "zxybc";
+        char min = s.charAt(0);
+        for(char b : s.toCharArray()){
+            if(b < min) 
+                min = b;
+        }
+        System.out.println("Smallest "+ min );
+    }
+}
 
-// public class str{
-//     public static void main(String[] args){
-//         String s = "bdxac";
-//         char maxss = s.charAt(0);
-//         for(char c : s.toCharArray()){
-//             if(c > maxss) maxss = c;
-//         }
-//         System.out.println("Largest :" + maxss);
-//     }
-// }
+remove duplicate character
 
-// public class str{
-//     public static void main(String[] args){
-//         String s = "zxybc";
-//         char min = s.charAt(0);
-//         for(char b : s.toCharArray()){
-//             if(b < min) 
-//                 min = b;
-//         }
-//         System.out.println("Smallest "+ min );
-//     }
-// }
+public class str{
+    public static void main(String[] args){
+        String s = "aabbccddeeff";
+        String ans = "";
 
-// remove duplicate character
-
-// public class str{
-//     public static void main(String[] args){
-//         String s = "aabbccddeeff";
-//         String ans = "";
-
-//         for(char c : s.toCharArray()){
-//             if(ans.indexOf(c) == -1){
-//                 ans += c;
-//             }
-//         }
-//         System.out.println(ans);
-//     }
-// }
+        for(char c : s.toCharArray()){
+            if(ans.indexOf(c) == -1){
+                ans += c;
+            }
+        }
+        System.out.println(ans);
+    }
+}
 
 public class str{
     public static void main(String[] args){

@@ -70,7 +70,6 @@ public class ReversArray{
 public class ReversArray {
 
     static void revers(int[] arr){
-        // int start = 0; end = arr.length - 1;
         int start = 0, end = arr.length - 1;
 
         while(start < end){

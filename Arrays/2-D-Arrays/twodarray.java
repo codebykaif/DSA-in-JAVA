@@ -1,59 +1,59 @@
 import java.util.*;
 
-// public class twodarrays{
-//     public static void main(String[] args){
-//         Scanner sc = new Scanner(System.in);
-//         System.out.print("Enter any number");
+public class twodarrays{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter any number");
 
-//         int n = sc.nextInt();
-//         int m = sc.nextInt();
+        int n = sc.nextInt();
+        int m = sc.nextInt();
 
-//         int[][] arr = new int[n][m];
+        int[][] arr = new int[n][m];
 
-//         for(int i=0; i<n; i++){
-//             for(int j=0; j<m; j++){
-//                 arr[i][j] = sc.nextInt();
-//             }
-//         }
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                arr[i][j] = sc.nextInt();
+            }
+        }
 
-//         for(int i=0; i<n; i++){
-//             for(int j=0; j<m; j++){
-//                 System.out.print(arr[i][j] + " ");
-//         }
-//         System.out.println();
-//         }
-//     }
-// }
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                System.out.print(arr[i][j] + " ");
+        }
+        System.out.println();
+        }
+    }
+}
 
-//Print Row-wise
-// public class twodarray{
-//     public static void main(String[] args){
-//         int[][] a = {{1,2,3},{4,5,6}};
+Print Row-wise
+public class twodarray{
+    public static void main(String[] args){
+        int[][] a = {{1,2,3},{4,5,6}};
 
-//         for(int i=0; i<a.length; i++){
-//             for(int j=0; j<a[0].length; j++){
-//                 System.out.print(a[i][j] + " ");
-//                 }
-//                 System.out.println();
-//         }
-//     }
-// }
+        for(int i=0; i<a.length; i++){
+            for(int j=0; j<a[0].length; j++){
+                System.out.print(a[i][j] + " ");
+                }
+                System.out.println();
+        }
+    }
+}
 
-// print column-wise
-// public class twodarray{
-//     public static void main(String[] args){
-//         int[][] a= {{1,2,3}, {4,5,6}};
+print column-wise
+public class twodarray{
+    public static void main(String[] args){
+        int[][] a= {{1,2,3}, {4,5,6}};
 
-//         for(int col = 0; col< a[0].length; col++){
-//             for(int row=0; row<a.length; row++){
-//                 System.out.print(a[row][col] + " ");
-//             }
-//             System.out.println();
-//         }
-//     }
-// }
+        for(int col = 0; col< a[0].length; col++){
+            for(int row=0; row<a.length; row++){
+                System.out.print(a[row][col] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
 
-//Search an element
+Search an element
 
 import java.util.*;
 

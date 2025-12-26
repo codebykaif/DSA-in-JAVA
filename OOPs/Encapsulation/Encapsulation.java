@@ -25,26 +25,26 @@ Student Marks (Basic Encapsulation)
 
 // Bank with Condition
 
-// class Account {
-//     private int balance = 1000;
+class Account {
+    private int balance = 1000;
 
-//     public void withdrow(int amt){
-//         if(amt <= 1000){
-//             balance -= amt;
-//         }
-//     }
-//     public int getBalance(){
-//         return balance;
-//     }
-// }
+    public void withdrow(int amt){
+        if(amt <= 1000){
+            balance -= amt;
+        }
+    }
+    public int getBalance(){
+        return balance;
+    }
+}
 
-// public class Encapsulation{
-// public static void main(String[] args){
-//     Account a = new Account();
-//     a.withdrow(300);
-//     System.out.println(a.getBalance());
-//     }
-// }
+public class Encapsulation{
+public static void main(String[] args){
+    Account a = new Account();
+    a.withdrow(300);
+    System.out.println(a.getBalance());
+    }
+}
 
 // Bank Account balance
 

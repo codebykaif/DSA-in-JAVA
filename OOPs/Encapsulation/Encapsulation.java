@@ -48,25 +48,25 @@ public static void main(String[] args){
 
 // Bank Account balance
 
-// class  BankAccount{
-// private double balance;
+class  BankAccount{
+private double balance;
 
-// public void deposite(double amount){
-//     balance += amount;
-//     }
-//     public double getBalance(){
-//         return balance;
-//     }
-// }
+public void deposite(double amount){
+    balance += amount;
+    }
+    public double getBalance(){
+        return balance;
+    }
+}
 
-// public class Encapsulation {
-// public static void main(String[] args){
-//     BankAccount b = new BankAccount();
-//     b.deposite(5000);
-//     System.out.println(b.getBalance());    
-//     }
+public class Encapsulation {
+public static void main(String[] args){
+    BankAccount b = new BankAccount();
+    b.deposite(5000);
+    System.out.println(b.getBalance());    
+    }
     
-// }
+}
 
 // withdrow with Condition
 

@@ -97,21 +97,22 @@ public class Encapsulation {
 }
 
 // Read only DATA
-// class Employee{
-//     private String id = "EMP101";
+
+class Employee{
+    private String id = "EMP101";
     
-//     public String getId(){
-//         return id;
-//     }
-// }
+    public String getId(){
+        return id;
+    }
+}
 
-// public class Encapsulation {
+public class Encapsulation {
 
-//     public static void main(String[] args){
-//         Employee e = new Employee();
-//         System.out.println(e.getId());
-//     }
-// }
+    public static void main(String[] args){
+        Employee e = new Employee();
+        System.out.println(e.getId());
+    }
+}
 
 // Write Only password
 

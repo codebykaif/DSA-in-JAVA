@@ -116,325 +116,325 @@ public class Encapsulation {
 
 // Write Only password
 
-// class User{
-//     private String password;
+class User{
+    private String password;
 
-//     public void setPassword(String p){
-//         password = p;
-//     }
-// }
-// public class Encapsulation {
-//     public static void main(String[] args){
-//         User u = new User();
-//         u.setPassword("secrete1234");
-//     }
-// }
+    public void setPassword(String p){
+        password = p;
+    }
+}
+public class Encapsulation {
+    public static void main(String[] args){
+        User u = new User();
+        u.setPassword("secrete1234");
+    }
+}
 
 // Age Validation
 
-// class Person{
-//     private int age;
+class Person{
+    private int age;
 
-//     public void setAge(int a){
-//         if(a >= 18)
-//             age = a;
-//     }
-//     public int getAge(){
-//         return age;
-//     }
-// }
-// public class Encapsulation{
-//     public static void main(String[] args){
-//         Person p = new Person();
-//         p.setAge(20);
-//         System.out.println(p.getAge());
-//     }
-// }
+    public void setAge(int a){
+        if(a >= 18)
+            age = a;
+    }
+    public int getAge(){
+        return age;
+    }
+}
+public class Encapsulation{
+    public static void main(String[] args){
+        Person p = new Person();
+        p.setAge(20);
+        System.out.println(p.getAge());
+    }
+}
 
 //  product price
 
-// class Product{
-//     private int price;
+class Product{
+    private int price;
 
-//     public void setPrice(int p){
-//         if (p > 0)
-//             price = p;
-//     }
-//     public int getPrice(){
-//         return price;
-//     }
-// }
+    public void setPrice(int p){
+        if (p > 0)
+            price = p;
+    }
+    public int getPrice(){
+        return price;
+    }
+}
 
-// public class Encapsulation {
+public class Encapsulation {
 
-//     public static void main(String[] args){
-//         Product p = new Product();
-//         p.setPrice(999);
-//         System.out.println(p.getPrice()); 
-//     }
-// }
+    public static void main(String[] args){
+        Product p = new Product();
+        p.setPrice(999);
+        System.out.println(p.getPrice()); 
+    }
+}
 
 // Encapsulation with Constructor
 
-// class Car{
-//     private String model;
-//     public Car(String m){
-//         model = m;
-//     }
-//     public String getModel(){
-//         return model;
-//     }
-// }
-// public class Encapsulation {
-//     public static void main(String[] args){
-//         Car c = new Car("BMW");
-//         System.out.println(c.getModel());
-//     }
-// }
+class Car{
+    private String model;
+    public Car(String m){
+        model = m;
+    }
+    public String getModel(){
+        return model;
+    }
+}
+public class Encapsulation {
+    public static void main(String[] args){
+        Car c = new Car("BMW");
+        System.out.println(c.getModel());
+    }
+}
 
 //     Counter Increment
 
-// class Counter{
-//     private int count;
+class Counter{
+    private int count;
 
-//     public void increment(){
-//         count++;
-//     }
-//     public int getCount(){
-//         return count;
-//     }
-// }
-// public class Encapsulation {
-// public static void main(String[] args){
-//     Counter c = new Counter();
-//     c.increment();
-//     c.increment();
-//     c.increment();
-//     System.out.println(c.getCount());
-//     }    
-// }
+    public void increment(){
+        count++;
+    }
+    public int getCount(){
+        return count;
+    }
+}
+public class Encapsulation {
+public static void main(String[] args){
+    Counter c = new Counter();
+    c.increment();
+    c.increment();
+    c.increment();
+    System.out.println(c.getCount());
+    }    
+}
 
 // Encapsulation with boolean
 
-// class Light{
-//     private boolean isOn;
+class Light{
+    private boolean isOn;
 
-//     public void turnOn(){
-//         isOn = true;
-//     }
-//     public boolean getStatus(){
-//         return isOn;
-//     }
-// }
+    public void turnOn(){
+        isOn = true;
+    }
+    public boolean getStatus(){
+        return isOn;
+    }
+}
 
-// public class Encapsulation {
+public class Encapsulation {
 
-//     public static void main(String[] args){
-//         Light l = new Light();
-//         l.turnOn();
-//         System.out.println(l.getStatus());
-//     }
-// }
+    public static void main(String[] args){
+        Light l = new Light();
+        l.turnOn();
+        System.out.println(l.getStatus());
+    }
+}
 
 //Max Limit Encapsulation
 
-// class Limit{
-//     private int value;
+class Limit{
+    private int value;
 
-//     public void setValue(int v){
-//         if(v <= 100)
-//             value = v;
-//     }
-//     public int getValue(){
-//         return value;
-//     }
-// }
-// public class Encapsulation {
+    public void setValue(int v){
+        if(v <= 100)
+            value = v;
+    }
+    public int getValue(){
+        return value;
+    }
+}
+public class Encapsulation {
 
-//     public static void main(String[] args){
-//         Limit l = new Limit();
-//         l.setValue(80);
-//         System.out.println(l.getValue());
-//     }
-// }
+    public static void main(String[] args){
+        Limit l = new Limit();
+        l.setValue(80);
+        System.out.println(l.getValue());
+    }
+}
 
 // track charging 
 
-// class Mobile{
-//     private int battry = 100;
+class Mobile{
+    private int battry = 100;
 
-//     public void useBattery(int b){
-//         battry -= b;
-//     }
-//     public int getBattery(){
-//         return battry;
-//     }
-// }
-// public class Encapsulation {
+    public void useBattery(int b){
+        battry -= b;
+    }
+    public int getBattery(){
+        return battry;
+    }
+}
+public class Encapsulation {
 
-// public static void main(String[] args){
-//     Mobile m = new Mobile();
-//     m.useBattery(70);
-//     System.out.println(m.getBattery());
-//     }
-// }
+public static void main(String[] args){
+    Mobile m = new Mobile();
+    m.useBattery(70);
+    System.out.println(m.getBattery());
+    }
+}
 
 // Encapsulation Array logic
 
-// class ArraySum{
-//     private int[] arr = {1,2,3,4};
+class ArraySum{
+    private int[] arr = {1,2,3,4};
 
-//     public int getSum(){
-//         int sum = 0;
-//         for(int i : arr)
-//             sum += i;
-//             return sum;
-//         }
-//     }
-//     public class Encapsulation {
+    public int getSum(){
+        int sum = 0;
+        for(int i : arr)
+            sum += i;
+            return sum;
+        }
+    }
+    public class Encapsulation {
     
-//         public static void main(String[] args){
-//             ArraySum a = new ArraySum();
-//             System.out.println(a.getSum());
-//         }
-//     }
+        public static void main(String[] args){
+            ArraySum a = new ArraySum();
+            System.out.println(a.getSum());
+        }
+    }
 
 // String Encapsulation to capital letter
 
-// class Name{
-//     private String name;
+class Name{
+    private String name;
 
-//     public void setName(String  n){
-//         name = n.toUpperCase();
-//     }
-//     public String getName(){
-//         return name;
-//     }
-// }
-// public class Encapsulation {
+    public void setName(String  n){
+        name = n.toUpperCase();
+    }
+    public String getName(){
+        return name;
+    }
+}
+public class Encapsulation {
 
-//     public static void main(String[] args){
-//         Name n = new Name();
-//         n.setName("kaif");
-//         System.out.println(n.getName());
-//     }
-// }
+    public static void main(String[] args){
+        Name n = new Name();
+        n.setName("kaif");
+        System.out.println(n.getName());
+    }
+}
 
 //  password length check
 
+class Login{
+    private String password;
 
-// class Login{
-//     private String password;
+    public void setPassword(String p){
+        if(p.length() <= 6){
+            password = p;
+    }else{
+        System.out.println("Password must be at least 6 character");
+    }
+}
+    public String getPassword(){
+        return password;
+    }
+}
 
-//     public void setPassword(String p){
-//         if(p.length() <= 6){
-//             password = p;
-//     }else{
-//         System.out.println("Password must be at least 6 character");
-//     }
-// }
-//     public String getPassword(){
-//         return password;
-//     }
-// }
+public class Encapsulation {
 
-// public class Encapsulation {
-
-//     public static void main(String[] args){
-//         Login l = new Login();
-//         l.setPassword("u8gevjg8");
-//         System.out.println(l.getPassword());
-//     }
-// }
+    public static void main(String[] args){
+        Login l = new Login();
+        l.setPassword("u8gevjg8");
+        System.out.println(l.getPassword());
+    }
+}
 
 //Encapsulation wit Math
 
-// class Sqaure{
-//     private int num;
+class Sqaure{
+    private int num;
 
-//     public void setNum(int n ){
-//         num = n;
-//     }
-//     public int getSquare(){
-//         return num * num;
-//     }
-// }
-// public class Encapsulation {
+    public void setNum(int n ){
+        num = n;
+    }
+    public int getSquare(){
+        return num * num;
+    }
+}
+public class Encapsulation {
 
-//     public static void main(String[] args){
-//         Sqaure s = new Sqaure();
-//         s.setNum(5);
-//         System.out.println(s.getSquare());
-//     }
-// }
+    public static void main(String[] args){
+        Sqaure s = new Sqaure();
+        s.setNum(5);
+        System.out.println(s.getSquare());
+    }
+}
 
 // Tempreture Control
 
-// class Temp{
-//     private int temp;
+class Temp{
+    private int temp;
 
-//     public void setTemp(int t){
-//         if(t >= 0 && t <= 50)
-//             temp = t;
-//     }
-//     public int geTemp(){
-//         return temp;
-//     }
-// }
-// public class Encapsulation {
+    public void setTemp(int t){
+        if(t >= 0 && t <= 50)
+            temp = t;
+    }
+    public int geTemp(){
+        return temp;
+    }
+}
+public class Encapsulation {
 
-//     public static void main(String[] args){
-//         Temp t = new Temp();
-//         t.setTemp(51);
-//         System.out.println(t.geTemp());
-//     }
-// }
+    public static void main(String[] args){
+        Temp t = new Temp();
+        t.setTemp(51);
+        System.out.println(t.geTemp());
+    }
+}
 
 // Encapsulation Condition Counter
-// class EvenCounter{
-//     private int count;
 
-//     public void add(int n){
-//         if(n % 2 == 0)
-//             count++;
-//     }
-//     public int getCount(){
-//         return count;
-//     }
-// }
-// public class Encapsulation {
+class EvenCounter{
+    private int count;
 
-//     public static void main(String[] args){
-//         EvenCounter e = new EvenCounter();
-//         e.add(2);
-//         e.add(3);
-//         e.add(4);
-//         System.out.println(e.getCount());
-//     }
-// }
+    public void add(int n){
+        if(n % 2 == 0)
+            count++;
+    }
+    public int getCount(){
+        return count;
+    }
+}
+public class Encapsulation {
+
+    public static void main(String[] args){
+        EvenCounter e = new EvenCounter();
+        e.add(2);
+        e.add(3);
+        e.add(4);
+        System.out.println(e.getCount());
+    }
+}
 
 //Student Result 
 
-// class Result{
-//     private int marks;
+class Result{
+    private int marks;
 
-//     public void setMarks(int m){
-//         marks = m;
-//     }
-//     public String getResult() {
-//         return marks >= 40 ? "Pass" : "Fail";
-//     }
-// }
-// public class Encapsulation {
+    public void setMarks(int m){
+        marks = m;
+    }
+    public String getResult() {
+        return marks >= 40 ? "Pass" : "Fail";
+    }
+}
+public class Encapsulation {
 
-//     public static void main(String[] args){
-//         Result r = new Result();
-//         r.setMarks(55);
-//         System.out.println(r.getResult());
-//     }
-// }
+    public static void main(String[] args){
+        Result r = new Result();
+        r.setMarks(55);
+        System.out.println(r.getResult());
+    }
+}
 
-// Enc apsulation + Min Value 
+// Encapsulation + Min Value 
 
 class MinFinder{
     private int[] arr = {5,3,9};

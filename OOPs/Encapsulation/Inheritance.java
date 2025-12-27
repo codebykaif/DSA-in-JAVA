@@ -492,3 +492,159 @@ public class Inheritance {
         System.out.println("type car "+ e.battry );
     }
 }
+class User{
+    String username = "kaif1234";
+}
+class Admin extends User{
+    String role = "Admin";
+}
+public class Inheritance {
+    public static void main(String[] args){
+        Admin a = new Admin();
+        System.out.println(a.username);
+        System.out.println(a.role);
+    }
+}
+
+class Bank{
+    int cash = 10000;
+}
+class ATM extends Bank{
+    int withdrow = 5000;
+}
+public class Inheritance {
+
+    public static void main(String[] args){
+        ATM a = new ATM();
+        System.out.println(a.cash - a.withdrow);
+    }
+}
+
+class Laptop{
+    int ram = 16;
+}
+class GraphicsCard extends Laptop{
+    int graphic = 6;
+}
+public class Inheritance {
+    public static void main(String[] args){
+        GraphicsCard g = new GraphicsCard();
+        System.out.println( "Ram "+g.ram);
+        System.out.println("Graphic Card "+g.graphic);
+    }
+}
+
+class food{
+    String type = "Food";
+}
+class Pizza extends food{
+    int price = 250;
+}
+public class Inheritance {
+
+    public static void main(String[] args){
+        Pizza p = new Pizza();
+        System.out.println(p.type);
+        System.out.println(p.price);
+    }
+}
+
+class Employee{
+    int salary = 22000;
+}
+class Tester extends Employee{
+    String tool = "Selenium";
+}
+public class Inheritance {
+
+    public static void main(String[] args){
+        Tester t = new Tester();
+        System.out.println("Employees salary " +t.salary);
+        System.out.println(" Tool " + t.tool);
+    }
+}
+
+class Book{
+    String author = "JAVA GURU";
+}
+class Ebook extends Book{
+    String format = "PDF";
+}
+public class Inheritance {
+
+    public static void main(String[] args){
+        Ebook e = new Ebook();
+        System.out.println(e.author);
+        System.out.println(e.format);
+    }
+}
+
+class shap{
+    int length = 10;
+}
+class Rectangle extends shap{
+    int width = 5;
+}
+public class Inheritance {
+
+    public static void main(String[] args){
+        Rectangle r = new Rectangle();
+        System.out.println(r.length * r.width);
+    }
+}
+
+class Customer{
+    int bill = 1000;
+}
+class PremiumCustomer extends Customer{
+    int discount = 220;
+}
+public class Inheritance {
+    public static void main(String[] args){
+        PremiumCustomer P = new PremiumCustomer();
+        System.out.println(P.bill - P.discount);
+    }
+}
+
+class School{
+    String SchoolName = "Angel heart public school";
+}
+class Student extends School{
+    String StudentName = "Mo Anas , Mo kaif , Muskan";
+}
+public class Inheritance {
+    public static void main(String[] args){
+        Student s = new Student();
+        System.out.println(s.SchoolName);
+        System.out.println(s.StudentName);
+    }
+}
+
+class Divice{
+    boolean power = true;
+}
+class Computer extends Divice{
+    String os = "Window";
+}
+public class Inheritance {
+
+    public static void main(String[] args){
+        Computer c = new Computer();
+        System.out.println(c.power);
+        System.out.println(c.os);
+    }
+}
+
+class Employee{
+    String intern = "Stipend";
+}
+class Intern extends Employee{
+    int Duration = 6;
+}
+public class Inheritance {
+    public static void main(String[] args){
+        Intern i = new Intern();
+        System.out.println(i.intern);
+        System.out.println(i.Duration);
+    }
+}

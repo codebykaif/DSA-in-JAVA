@@ -383,101 +383,100 @@ public class Inheritance {
 // }
 
 // Account --> Saving Account
-// class Account{
-//     int balance = 10000;
-// }
-// class SavingAccount extends Account{
-//     int intrest = 500;
-// }
-// public class Inheritance {
+class Account{
+    int balance = 10000;
+}
+class SavingAccount extends Account{
+    int intrest = 500;
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         SavingAccount s = new SavingAccount();
-//         System.out.println(s.balance + s.intrest);
-//     }
-// }
+    public static void main(String[] args){
+        SavingAccount s = new SavingAccount();
+        System.out.println(s.balance + s.intrest);
+    }
+}
 
 import javax.security.sasl.SaslException;
 
-// class Mobile{
-//     void call(){
-//         System.out.println("Calling...");
-//     }
-// }
-// class Smartphone extends Mobile{
-//     void internet(){
-//         System.out.println("Using internet");
-//     }
-// }
-// public class Inheritance {
+class Mobile{
+    void call(){
+        System.out.println("Calling...");
+    }
+}
+class Smartphone extends Mobile{
+    void internet(){
+        System.out.println("Using internet");
+    }
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         Smartphone s = new Smartphone();
-//         s.call();
-//         s.internet();
-//     }
-// }
+    public static void main(String[] args){
+        Smartphone s = new Smartphone();
+        s.call();
+        s.internet();
+    }
+}
     
-// class Vehicle{
-//     int speed = 60;
-// }
-// class Bike extends Vehicle{
-//     int gear = 5;
-// }
-// public class Inheritance {
-//     public static void main(String[] args){
-//         Bike b = new Bike();
-//         System.out.println("Speed = " + b.speed);
-//         System.out.println("Total Gear " + b.gear);
-//     }
-// }
+class Vehicle{
+    int speed = 60;
+}
+class Bike extends Vehicle{
+    int gear = 5;
+}
+public class Inheritance {
+    public static void main(String[] args){
+        Bike b = new Bike();
+        System.out.println("Speed = " + b.speed);
+        System.out.println("Total Gear " + b.gear);
+    }
+}
 
-//
 
-// class Comapany{
-//     String companyName = "TCS";
-// }
-// class Employee extends Comapany{
-//     String empName = "Mo kaif";
-// }
-// public class Inheritance {
-//     public static void main(String[] args){
-//         Employee e = new Employee();
-//         System.out.println("companyName " + e.companyName);
-//         System.out.println("Employee name" + e.empName);
-//     }
-// }
+class Comapany{
+    String companyName = "TCS";
+}
+class Employee extends Comapany{
+    String empName = "Mo kaif";
+}
+public class Inheritance {
+    public static void main(String[] args){
+        Employee e = new Employee();
+        System.out.println("companyName " + e.companyName);
+        System.out.println("Employee name" + e.empName);
+    }
+}
 
-// class Phone{
-//     void featur(){
-//         System.out.println("Basic function");
-//     }
-// }
-// class Android extends Phone{
-//     void featur(){
-//         System.out.println("Android phone");
-//     }
-// }
-// public class Inheritance {
-//     public static void main(String[] args){
-//         Android a = new Android();
-//         a.featur();
-//     }
-// }
+class Phone{
+    void featur(){
+        System.out.println("Basic function");
+    }
+}
+class Android extends Phone{
+    void featur(){
+        System.out.println("Android phone");
+    }
+}
+public class Inheritance {
+    public static void main(String[] args){
+        Android a = new Android();
+        a.featur();
+    }
+}
 
-// class Teacher{
-//     int salary = 25000;
-// }
-// class MathTeacher extends Teacher{
-//     String subject = "Math";
-// }
-// public class Inheritance {
-//     public static void main(String[] args){
-//         MathTeacher m = new MathTeacher();
-//         System.out.println(" Salary" + m.salary);
-//         System.out.println("Which is subject teacher" + m.subject);
-//     }
-// }
+class Teacher{
+    int salary = 25000;
+}
+class MathTeacher extends Teacher{
+    String subject = "Math";
+}
+public class Inheritance {
+    public static void main(String[] args){
+        MathTeacher m = new MathTeacher();
+        System.out.println(" Salary" + m.salary);
+        System.out.println("Which is subject teacher" + m.subject);
+    }
+}
 
 class Car{
     int wheel = 4;

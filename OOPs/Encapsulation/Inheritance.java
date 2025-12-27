@@ -183,171 +183,171 @@ public class Inheritance {
 
 // Final (Method Cannot Override)
 
-// class A{
-//     final void show(){
-//         System.out.println("Final method");
-//     }
-// }
-// class B extends A{
-//     public class Inheritance {
+class A{
+    final void show(){
+        System.out.println("Final method");
+    }
+}
+class B extends A{
+    public class Inheritance {
     
-//     public static void main(String[] args){
-//         B obj = new B();
-//         obj.show();
-//         }
-//     }
-// }
+    public static void main(String[] args){
+        B obj = new B();
+        obj.show();
+        }
+    }
+}
 
 // Upcasting
 
-// class A {
-//     void show() {
-//         System.out.println("A");
-//     }
-// }
+class A {
+    void show() {
+        System.out.println("A");
+    }
+}
 
-// class B extends A {
-//     void show() {
-//         System.out.println("B");
-//     }
-// }
+class B extends A {
+    void show() {
+        System.out.println("B");
+    }
+}
 
-// public class Inheritance {
-//     public static void main(String[] args) {
-//         A obj = new B();
-//         obj.show();
-//     }
-// }
+public class Inheritance {
+    public static void main(String[] args) {
+        A obj = new B();
+        obj.show();
+    }
+}
 
 // Downcasting
 
-// class A {
-//     void show(){
-//         System.out.println("A");
-//     }
-// }
-// class B extends A{
-//     void print(){
-//         System.out.println("B");
-//     }
-// } 
-// public class Inheritance {
+class A {
+    void show(){
+        System.out.println("A");
+    }
+}
+class B extends A{
+    void print(){
+        System.out.println("B");
+    }
+} 
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         A obj = new B();
-//         B b = (B) obj;
-//         b.print();
-//     }
-// }
+    public static void main(String[] args){
+        A obj = new B();
+        B b = (B) obj;
+        b.print();
+    }
+}
 
 // instanceof wit Inheritance , Cheuq ki ye object is class ka hai ki nhi 
 
-// class A{}
-//     class B extends A{}
+class A{}
+    class B extends A{}
 
-//     public class Inheritance {
+    public class Inheritance {
     
-//         public static void main(String[] args){
-//             A obj = new B();
-//             System.out.println(obj instanceof B);
-//         }
-// }
+        public static void main(String[] args){
+            A obj = new B();
+            System.out.println(obj instanceof B);
+        }
+}
 
 //  Overriding parent child + samre + same parameter 
 
-// class A{
-//     void msg(){
-//         System.out.println("Hello A");
-//     }
-// }
-// class B extends A{
-//     void msg(){
-//         super.msg();
-//         System.out.println("Hello B");
-//     }
-// }
-// public class Inheritance {
+class A{
+    void msg(){
+        System.out.println("Hello A");
+    }
+}
+class B extends A{
+    void msg(){
+        super.msg();
+        System.out.println("Hello B");
+    }
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         B obj = new B();
-//         obj.msg();
-//     }
-// }
+    public static void main(String[] args){
+        B obj = new B();
+        obj.msg();
+    }
+}
 
 // Inheritance with data Members
-// class A{
-//     int x = 20;
-// }
-// class B extends A{
-//     int y = 23;
-// }
-// public class Inheritance {
+class A{
+    int x = 20;
+}
+class B extends A{
+    int y = 23;
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         B obj = new B();
-//         System.out.println(obj.x + obj.y);
-//     }
-// }
+    public static void main(String[] args){
+        B obj = new B();
+        System.out.println(obj.x + obj.y);
+    }
+}
 
 // Method Hiding static
 
-// class A{
-//     static void show(){
-//         System.out.println("A static");
-//     }
-// }
-// class B extends A{
-//     static void show(){
-//         System.out.println("B static");
-//     }
-// }
-// public class Inheritance {
+class A{
+    static void show(){
+        System.out.println("A static");
+    }
+}
+class B extends A{
+    static void show(){
+        System.out.println("B static");
+    }
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         A obj = new B();
-//         obj.show();
-//     }
-// }
+    public static void main(String[] args){
+        A obj = new B();
+        obj.show();
+    }
+}
 
 // Inheritance + Array
 
-// class A{
-//     void show(){
-//         System.out.println("A");
-//     }
-// }
-// class B extends A{
-//     void show(){
-//         System.out.println("B");
-//     }
-// }
-// public class Inheritance {
+class A{
+    void show(){
+        System.out.println("A");
+    }
+}
+class B extends A{
+    void show(){
+        System.out.println("B");
+    }
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         A[] arr = {new A(), new B()};
-//         for(A a: arr){
-//             a.show();
-//         }
-//     }
-// }
+    public static void main(String[] args){
+        A[] arr = {new A(), new B()};
+        for(A a: arr){
+            a.show();
+        }
+    }
+}
 
 // Inheritance with Return Type Covariant
 
 // Real-World Example 
 
-// class Employee{
-//     int salary = 20000;
-// }
-// class Developer extends Employee{
-//     int bouns = 5000;
-// }
-// public class Inheritance {
+class Employee{
+    int salary = 20000;
+}
+class Developer extends Employee{
+    int bouns = 5000;
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         Developer d = new Developer();
-//         System.out.println(d.salary + d.bouns);
-//     }
-// }
+    public static void main(String[] args){
+        Developer d = new Developer();
+        System.out.println(d.salary + d.bouns);
+    }
+}
 
 //  Employee -->  Manager
 

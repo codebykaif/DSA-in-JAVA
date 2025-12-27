@@ -1,185 +1,185 @@
 // Single Inheritance (Basic)
 
-// class Animal{
-//     void eat(){
-//         System.out.println("Animals eats");
-//     }
-// }
-// class Dog extends Animal{
-//     void bark(){
-//         System.out.println("Dog barks");
-//     }
-// }
-// public class Inheritance {
+class Animal{
+    void eat(){
+        System.out.println("Animals eats");
+    }
+}
+class Dog extends Animal{
+    void bark(){
+        System.out.println("Dog barks");
+    }
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         Dog d = new Dog();
-//         d.eat();
-//         d.bark();
-//     }
-// }
+    public static void main(String[] args){
+        Dog d = new Dog();
+        d.eat();
+        d.bark();
+    }
+}
 
 // Method Inheritance
 
-// class A{
-//     void show(){
-//         System.out.println("Class A method");
-//     }
-// }
-// class B extends A{
-// }
+class A{
+    void show(){
+        System.out.println("Class A method");
+    }
+}
+class B extends A{
+}
 
-// public class Inheritance {
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         B obj = new B();
-//         obj.show();
-//     }
-// }
+    public static void main(String[] args){
+        B obj = new B();
+        obj.show();
+    }
+}
 
 // Method Overriding => When Method parent and child name and parameter same is called method Overriding
 
-// import javax.swing.plaf.synth.SynthStyle;
-// class Parent{
-//     void display(){
-//         System.out.println("Parent display");
-//     }
-// }
-// class Child extends Parent{
-//     void display(){
-//         System.out.println("Child display");
-//     }
-// }
-// public class Inheritance {
-//     public static void main(String[] args){
-//         Parent p = new Child();
-//         p.display();
-//     }
-// }
+import javax.swing.plaf.synth.SynthStyle;
+class Parent{
+    void display(){
+        System.out.println("Parent display");
+    }
+}
+class Child extends Parent{
+    void display(){
+        System.out.println("Child display");
+    }
+}
+public class Inheritance {
+    public static void main(String[] args){
+        Parent p = new Child();
+        p.display();
+    }
+}
 
 //  Multilevel Inheritance
 
-// class A{
-//     void  a (){
-//         System.out.println("A");
-//         }
-//     }
-//     class B extends A{
-//         void b(){
-//             System.out.println("B");
-//         }
-//     }
-//         class C extends B{
-//             void c(){
-//                 System.out.println("C");
-//                 }
-//             }
-//             public class Inheritance {
-//             public static void main(String[] args){
-//                 C obj = new C();
-//                 obj.a();
-//                 obj.b();
-//                 obj.c();
-//             }
-//         } 
+class A{
+    void  a (){
+        System.out.println("A");
+        }
+    }
+    class B extends A{
+        void b(){
+            System.out.println("B");
+        }
+    }
+        class C extends B{
+            void c(){
+                System.out.println("C");
+                }
+            }
+            public class Inheritance {
+            public static void main(String[] args){
+                C obj = new C();
+                obj.a();
+                obj.b();
+                obj.c();
+            }
+        } 
 
 //  Herarchical Inheritance
 
-// class Animal{
-//     void sound(){
-//         System.out.println("Animal Sound");
-//     }
-// }
-// class Dog extends Animal{}
-// class Cat extends Animal{}
+class Animal{
+    void sound(){
+        System.out.println("Animal Sound");
+    }
+}
+class Dog extends Animal{}
+class Cat extends Animal{}
 
-// public class Inheritance {
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         Dog d = new Dog();
-//         Cat c = new Cat();
-//         d.sound();
-//         c.sound();
-//     }
-// }
+    public static void main(String[] args){
+        Dog d = new Dog();
+        Cat c = new Cat();
+        d.sound();
+        c.sound();
+    }
+}
 
 // Constructor Inheritance
 
-// class A{
-//     A(){
-//         System.out.println("A constructor");
-//     }
-// }
-// class B extends A{
-//     B() {
-//         System.out.println("B constructor");
-//     }
-// }
-// public class Inheritance {
+class A{
+    A(){
+        System.out.println("A constructor");
+    }
+}
+class B extends A{
+    B() {
+        System.out.println("B constructor");
+    }
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         B obj = new B();
-//     }
-// }
+    public static void main(String[] args){
+        B obj = new B();
+    }
+}
 
 //Super keyword (Method)
 
-// class A{
-//     void show(){
-//         System.out.println("A show");
-//     }
-// }
-// class B extends A{
-//     void show(){
-//         super.show();       // Parent Constructor caall 
-//         System.out.println("Parent Constructor");
-//     }
-// }
-// public class Inheritance {
+class A{
+    void show(){
+        System.out.println("A show");
+    }
+}
+class B extends A{
+    void show(){
+        super.show();       // Parent Constructor caall 
+        System.out.println("Parent Constructor");
+    }
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         B obj = new B();
-//         obj.show();
-//     }
-// }
+    public static void main(String[] args){
+        B obj = new B();
+        obj.show();
+    }
+}
 
 // Super keyword (Variable)
 
-// class A{
-//     int x = 10;
-// }
-// class B extends A{
-//     int x = 20;
+class A{
+    int x = 10;
+}
+class B extends A{
+    int x = 20;
 
-//     void print(){
-//         System.out.println(super.x);
-//     }
-// }
-// public class Inheritance {
+    void print(){
+        System.out.println(super.x);
+    }
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         B obj = new B();
-//         obj.print();
-//     }
-// }
+    public static void main(String[] args){
+        B obj = new B();
+        obj.print();
+    }
+}
 
 // Protected Access
 
-// class A{
-//     protected int x = 5;
-// }
-// class B extends A{
-//     void show(){
-//         System.out.println(x);
-//     }
-// }
-// public class Inheritance {
+class A{
+    protected int x = 5;
+}
+class B extends A{
+    void show(){
+        System.out.println(x);
+    }
+}
+public class Inheritance {
 
-//     public static void main(String[] args){
-//         B obj = new B();
-//         obj.show();
-//     }
-// }
+    public static void main(String[] args){
+        B obj = new B();
+        obj.show();
+    }
+}
 
 // Final (Method Cannot Override)
 

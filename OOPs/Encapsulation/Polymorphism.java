@@ -445,3 +445,96 @@ public class Polymorphism {
     }
 }
 
+
+class Animal{
+    void eat(){
+        System.out.println("Eating");
+    }
+}
+class dog extends Animal{
+    void eat(){
+        super.eat();
+        System.out.println("Dog eating");
+    }
+}
+public class Polymorphism {
+
+    public static void main(String[] args){
+        Animal a = new dog();
+        a.eat();
+    }
+}
+
+        class A {
+            final void show(){
+                System.out.println("Final method");
+            }
+        }
+        public class Polymorphism {
+        
+            public static void main(String[] args){
+                A a = new A();
+                a.show();
+            }
+        }
+
+        abstract class Shape{
+            abstract void area();
+        }
+        class Square extends Shape{
+            void area(){
+                System.out.println("Area = side * side");
+            }
+        }
+        public class Polymorphism {
+        
+            public static void main(String[] args){
+                Shape s = new Square();
+                s.area();
+            }
+        }
+
+
+// interface polymorphism
+        interface Payment{
+            void pay();
+        }
+        class UPI implements Payment{
+            public void pay(){
+                System.out.println("UPI Payment");
+            }
+        }
+        public class Polymorphism {
+        
+            public static void main(String[] args){
+                Payment p = new UPI();
+                p.pay();
+            }
+        }
+
+Array of parent reference
+
+class Animal{
+    void sound(){
+        System.out.println("Animal sound");
+    }
+}
+class Dog extends Animal{
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+class Cat extends Animal{
+    void sound(){
+        System.out.println("Cat meows");
+    }
+}
+public class Polymorphism {
+
+    public static void main(String[] args){
+        Animal[] a = {new Dog(), new Cat()};
+        for(Animal x : a){
+            x.sound();
+        }
+    }
+}

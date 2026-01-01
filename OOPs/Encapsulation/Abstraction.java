@@ -1,88 +1,88 @@
 // Abstraction using method Overriding
 // class Animal{
-//     void sound(){
-//         System.out.println("Animals sound");
-//     }
-// }
-// class Dog extends Animal{
-//     void sound(){
-//         System.out.println("Dog barks");
-//     }
-// }
-// public class Abstraction {
+    void sound(){
+        System.out.println("Animals sound");
+    }
+}
+class Dog extends Animal{
+    void sound(){
+        System.out.println("Dog barks");
+    }
+}
+public class Abstraction {
 
-//     public static void main(String[] args){
-//         Animal a = new Dog();
-//         a.sound();
-//     }
-// }
+    public static void main(String[] args){
+        Animal a = new Dog();
+        a.sound();
+    }
+}
 
 // Multiple object with loop
-// class Animal{
-//     void sound(){
-//         System.out.println("Animal sound");
-//     }
-// }
-// class Dog extends Animal{
-//     void sound(){
-//         System.out.println("Dog barks");
-//     }
-// }
-// class Cat extends Animal{
-//     void sound(){
-//         System.out.println("Cat meows");
-//     }
-// }
-// public class Abstraction {
-//     public static void main(String[] args){
-//         Animal[] a = {new Dog(), new Cat()};
-//         for(Animal  x : a){
-//             x.sound();
-//         }
-//     }
-// }
+class Animal{
+    void sound(){
+        System.out.println("Animal sound");
+    }
+}
+class Dog extends Animal{
+    void sound(){
+        System.out.println("Dog barks");
+    }
+}
+class Cat extends Animal{
+    void sound(){
+        System.out.println("Cat meows");
+    }
+}
+public class Abstraction {
+    public static void main(String[] args){
+        Animal[] a = {new Dog(), new Cat()};
+        for(Animal  x : a){
+            x.sound();
+        }
+    }
+}
 
 //Abstract class basic example
 
-// abstract class Shape{
-//     abstract void draw();
-// }
-// class Circle extends Shape{
-//     void draw(){
-//         System.out.println("Drawing Circle");
-//     }
-// }
-// public class Abstraction {
-//     public static void main(String[] args){
-//         Shape s = new Circle();
-//         s.draw();
-//     }
-// }
+abstract class Shape{
+    abstract void draw();
+}
+class Circle extends Shape{
+    void draw(){
+        System.out.println("Drawing Circle");
+    }
+}
+public class Abstraction {
+    public static void main(String[] args){
+        Shape s = new Circle();
+        s.draw();
+    }
+}
 
 // Abstract classwith two children
 
-// abstract class vehicle{
-//     abstract void start();
-// }
-// class Bike extends vehicle{
-//     void start(){
-//         System.out.println("Bike start");
-//     }
-// }
-// class Car extends vehicle{
-//     void start(){
-//         System.out.println("Car start");
-//     }
-// }
-// public class Abstraction {
-//     public static void main(String[] args){
-//         vehicle v1 = new Bike();
-//         vehicle v2 = new Car();
+abstract class vehicle{
+    abstract void start();
+}
+class Bike extends vehicle{
+    void start(){
+        System.out.println("Bike start");
+    }
+}
+class Car extends vehicle{
+    void start(){
+        System.out.println("Car start");
+    }
+}
+public class Abstraction {
+    public static void main(String[] args){
+        vehicle v1 = new Bike();
+        vehicle v2 = new Car();
 
-//         v1.start();
-//         v2.start();
-//     }
-// }
+        v1.start();
+        v2.start();
+    }
+}
 
 // Abstraction + Array
 

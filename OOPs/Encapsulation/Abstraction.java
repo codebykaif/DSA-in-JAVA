@@ -1,5 +1,5 @@
 // Abstraction using method Overriding
-// class Animal{
+class Animal{
     void sound(){
         System.out.println("Animals sound");
     }

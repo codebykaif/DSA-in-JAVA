@@ -295,3 +295,163 @@ public class Abstraction {
         f2.fly(); 
     }
 }
+
+abstract class Machine{
+    abstract void work();
+}
+class Tofho extends Machine{
+    public void work(){
+        System.out.println("tofho is build-up a paneer ");
+    }
+}
+class Mixser extends Machine{
+    public void work(){
+        System.out.println("Mixser machine is make juic");
+    }
+}
+public class Abstraction {
+
+    public static void main(String[] args){
+        Machine m1 = new Tofho();
+        Machine m2 = new Mixser();
+        m1.work();
+        m2.work();
+    }
+}
+
+ interface Login{
+    void login();
+ } 
+ class Admin implements Login{
+    public void login(){
+        System.out.println("Admin logdin with full accses");
+    }
+ }
+ class Users implements Login{
+    public void login(){
+        System.out.println("User logging with limited accses");
+    }
+ }
+ public class Abstraction {
+ 
+    public static void main(String[] args){
+        Login l1 = new Admin();
+        Login l2 = new Users();
+        l1.login();
+        l2.login();
+    }
+ }
+
+abstract class Appliance{
+    abstract void power();
+}
+class Fan extends Appliance{
+    void power(){
+        System.out.println("Fan power cunsuption less then 100 w");
+    }
+}
+class Freez extends Appliance{
+    void power(){
+        System.out.println("Freez power cunsuption 250 w");
+    }
+} 
+public class Abstraction {
+
+    public static void main(String[] args){
+        Appliance a1 = new Fan();
+        Appliance a2 = new Freez();
+        a1.power();
+        a2.power();
+    }
+}
+
+interface Vehicle{
+    void speed();
+}
+class Car implements Vehicle{
+    public void speed(){
+        System.out.println("Car mximum speed 200 killo meter");
+    }
+}
+class Cycle implements Vehicle{
+    public void speed(){
+        System.out.println("Cycle speed maximum 30 killo meter");
+    }
+} 
+public class Abstraction {
+
+    public static void main(String[] args){
+        Vehicle v1 = new Car();
+        Vehicle v2 = new Cycle();
+        v1.speed();
+        v2.speed();
+    }
+}
+
+abstract class Fruits{
+    abstract void test();
+}
+class Apple extends Fruits{
+    void test(){
+        System.out.println("Apple is king of Fruits and this is sweet"
+         + "to eat and more then atractive from otjer frutes");
+    }
+}
+class Orange extends Fruits{
+    void test(){
+        System.out.println("Orange is also good but test is like lemon and sweet");
+    }
+}
+public class Abstraction {
+    public static void main(String[] args){
+        Fruits f1 = new Apple();
+        Fruits f2 = new Orange();
+        f1.test();
+        f2.test();
+    }
+}
+
+abstract class Account{
+    abstract void intrest();
+}
+class SBI extends Account{
+    public void intrest(){
+        System.out.println("SBI given loan on 6% per month");
+    }
+}
+class PNB extends Account{
+    public void intrest(){
+        System.out.println("Punjab National Bank Given loan on 4.3% per month");
+    }
+}
+public class Abstraction {
+
+    public static void main(String[] args){
+        Account a1 = new SBI();
+        Account a2 = new PNB();
+        a1.intrest();
+        a2.intrest();
+    }
+}
+
+interface Game{
+    void play();
+}
+class Cricket implements Game{
+    public void play(){
+        System.out.println("The cricket is a international level cricket in this game 11 team member paly in th feild");
+    }
+}
+class Hockey implements Game{
+    public void play(){
+        System.out.println("Hockey is a indian game and play with two person");
+    }
+}
+public class Abstraction {
+    public static void main(String[] args){
+        Game g1 = new Cricket();
+        Game g2 = new Hockey();
+        g1.play();
+        g2.play();
+    }
+}
